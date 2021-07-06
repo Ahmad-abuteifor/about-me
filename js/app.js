@@ -1,6 +1,7 @@
 
 'use strict'
 let username = prompt('please enter your name ')
+let score = 0
 
 console.log(username);
 alert('welcome '+username + ' we are going to play a guessing  game ')
@@ -11,7 +12,8 @@ car=car.toLocaleLowerCase()
 
 if (car ==='yes'||car ==='y'){
     console.log(car);
-    alert('great job That\'s right  '+ username)
+    alert('great job That\'s right  '+ username);
+    score++;
 } 
 else if( car ==='no'|| car==='n'){
     console.log(car);
@@ -31,7 +33,8 @@ if (place  ==='yes'|| place==='y'){
 else if( place ==='no'||place ==='n'){
     console.log(place);
     alert('great job That\'s right  '+ username)
-   
+    score++;
+
 }
 else{
     alert('please enter yes/y or no/n ')
@@ -41,7 +44,9 @@ let tall = prompt('is my tall around 177 cm ?')
 tall=tall.toLowerCase()
 if (tall ==='yes'|| tall==='y'){
     console.log(tall);
-    alert('great job That\'s right  '+ username)
+    alert('great job That\'s right  '+ username);
+    score++;
+
 }
 else if( tall ==='no'||tall==='n'){
     console.log(tall);
@@ -58,8 +63,10 @@ if (food  ==='yes'||food ==='y'){
 }
 else if( food ==='no'||food ==='n'){
     console.log(food);
-    alert('great job That\'s right  '+ username)
-   
+    alert('great job That\'s right  '+ username);
+    score++;
+
+
 }
 else{
     alert('please enter yes/y or no/n ')
@@ -73,8 +80,10 @@ if (live  ==='yes'|| live ==='y'){
 }
 else if( live ==='no'||live ==='n'){
     console.log(food);
-    alert('great job That\'s right  '+ username)
-   
+    alert('great job That\'s right  '+ username);
+    score++;
+
+
 }
 else{
     alert('please enter yes/y or no/n ')
@@ -82,3 +91,86 @@ else{
 
 
 alert('thanks '+username+'for playing with us ')
+
+
+
+let num = prompt('guess a number between 4 and 25')
+console.log(num);
+num=parseInt(num);
+for (let i=0;i<3;i++){
+
+   if (num==13){
+       alert('yes you are right ')
+       console.log(num);
+       score++;
+       break;
+
+   }
+     else if ((14 <= num) &&( num <= 25))
+     {alert('too high ')
+     num = prompt('pleas try again ')
+     console.log(num);
+
+    }
+      else if ((4 <=num) && (num <=12))
+    {alert('too low ')
+    num = prompt('pleas try again ')
+    console.log(num);
+
+
+    }
+      else {
+        alert('soory your answer wrong ')
+        num = prompt('pleas try again ')
+
+    }
+}
+
+
+
+let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
+// let foodqus = prompt('what is my faveroit food ')
+
+
+// for (let i = 0; i < 6; i++) {
+//     console.log('first loop ');
+   
+
+
+
+
+
+
+
+
+
+   let counter = 0
+   let correctanser=false
+ while (counter < 6 && correctanser ==false){
+    let foodqus = prompt('what is my faveroit food ')
+
+
+    for (let n = 0; n < typefood.length; n++) {
+        console.log('first loop ' ,n);
+
+        if (foodqus === typefood[n]) {
+           
+            alert('wow great also ' + typefood)
+            correctanser = true
+            score++;
+            break;
+            
+
+        }
+
+        // else {
+        //     foodqus = prompt('please try again ')
+
+        // }
+ }
+
+ counter++ 
+
+}
+console.log(score);
+alert(`you have a score of ${score} /7`);
