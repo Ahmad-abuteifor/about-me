@@ -108,7 +108,7 @@ question5()
 
 alert('thanks '+username+'for playing with us ')
 
-
+function question6(){
 
 let num = prompt('guess a number between 4 and 25')
 console.log(num);
@@ -142,7 +142,8 @@ for (let i=0;i<3;i++){
     }
 }
 
-
+}
+question6()
 
 
    
