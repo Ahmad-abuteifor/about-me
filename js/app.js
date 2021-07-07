@@ -184,7 +184,7 @@ question6()
 //  counter++ 
 
 // }
-
+function question7(){
 let response='';
 let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
 
@@ -211,6 +211,8 @@ else if (i<6){
 
 }
 
+}
+question7()
 
 
 
