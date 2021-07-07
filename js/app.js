@@ -47,6 +47,7 @@ else{
 }
 question2()
 
+function question3(){
 let tall = prompt('is my tall around 177 cm ?')
 tall=tall.toLowerCase()
 if (tall ==='yes'|| tall==='y'){
@@ -61,6 +62,8 @@ else if( tall ==='no'||tall==='n'){
 }else{
     alert('please enter yes/y or no/n ')
 }
+}
+question3()
 
 let food = prompt('do you think that ahmad like maqluba ')
 food=food.toLowerCase()
