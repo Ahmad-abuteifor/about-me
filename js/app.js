@@ -5,7 +5,7 @@ let score = 0
 
 console.log(username);
 alert('welcome '+username + ' we are going to play a guessing  game ')
-
+function question1(){
 let car = prompt('is it bmw my favorite car ? ')
 console.log(car);
 car=car.toLocaleLowerCase()
@@ -22,7 +22,8 @@ else if( car ==='no'|| car==='n'){
 else {
     alert('please enter yes/y or no/n ')
 }
-
+}
+question1 ()
 let place = prompt('is garmany in jordan !?')
 place=place.toLocaleLowerCase()
 
