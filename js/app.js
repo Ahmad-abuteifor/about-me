@@ -84,6 +84,7 @@ else{
 }
 question4()
 
+function question5(){
 let live = prompt('is the dinosaurs Existing ')
 live=live.toLowerCase()
 if (live  ==='yes'|| live ==='y'){
@@ -100,6 +101,9 @@ else if( live ==='no'||live ==='n'){
 else{
     alert('please enter yes/y or no/n ')
 }
+}
+question5()
+
 
 
 alert('thanks '+username+'for playing with us ')
