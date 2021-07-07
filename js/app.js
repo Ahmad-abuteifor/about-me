@@ -64,7 +64,7 @@ else if( tall ==='no'||tall==='n'){
 }
 }
 question3()
-
+function question4(){
 let food = prompt('do you think that ahmad like maqluba ')
 food=food.toLowerCase()
 if (food  ==='yes'||food ==='y'){
@@ -81,6 +81,8 @@ else if( food ==='no'||food ==='n'){
 else{
     alert('please enter yes/y or no/n ')
 }
+}
+question4()
 
 let live = prompt('is the dinosaurs Existing ')
 live=live.toLowerCase()
