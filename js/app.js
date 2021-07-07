@@ -6,6 +6,8 @@ let score = 0
 console.log(username);
 alert('welcome '+username + ' we are going to play a guessing  game ')
 
+function question1(){
+
 let car = prompt('is it bmw my favorite car ? ')
 console.log(car);
 car=car.toLocaleLowerCase()
@@ -22,7 +24,10 @@ else if( car ==='no'|| car==='n'){
 else {
     alert('please enter yes/y or no/n ')
 }
+}
+question1 ()
 
+function question2(){
 let place = prompt('is garmany in jordan !?')
 place=place.toLocaleLowerCase()
 
@@ -39,7 +44,10 @@ else if( place ==='no'||place ==='n'){
 else{
     alert('please enter yes/y or no/n ')
 }
+}
+question2()
 
+function question3(){
 let tall = prompt('is my tall around 177 cm ?')
 tall=tall.toLowerCase()
 if (tall ==='yes'|| tall==='y'){
@@ -54,7 +62,9 @@ else if( tall ==='no'||tall==='n'){
 }else{
     alert('please enter yes/y or no/n ')
 }
-
+}
+question3()
+function question4(){
 let food = prompt('do you think that ahmad like maqluba ')
 food=food.toLowerCase()
 if (food  ==='yes'||food ==='y'){
@@ -71,7 +81,10 @@ else if( food ==='no'||food ==='n'){
 else{
     alert('please enter yes/y or no/n ')
 }
+}
+question4()
 
+function question5(){
 let live = prompt('is the dinosaurs Existing ')
 live=live.toLowerCase()
 if (live  ==='yes'|| live ==='y'){
@@ -88,11 +101,14 @@ else if( live ==='no'||live ==='n'){
 else{
     alert('please enter yes/y or no/n ')
 }
+}
+question5()
+
 
 
 alert('thanks '+username+'for playing with us ')
 
-
+function question6(){
 
 let num = prompt('guess a number between 4 and 25')
 console.log(num);
@@ -126,7 +142,8 @@ for (let i=0;i<3;i++){
     }
 }
 
-
+}
+question6()
 
 
    
@@ -167,7 +184,7 @@ for (let i=0;i<3;i++){
 //  counter++ 
 
 // }
-
+function question7(){
 let response='';
 let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
 
@@ -194,6 +211,8 @@ else if (i<6){
 
 }
 
+}
+question7()
 
 
 
