@@ -128,12 +128,7 @@ for (let i=0;i<3;i++){
 
 
 
-let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
-// let foodqus = prompt('what is my faveroit food ')
 
-
-// for (let i = 0; i < 6; i++) {
-//     console.log('first loop ');
    
 
 
@@ -144,33 +139,63 @@ let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
 
 
 
-   let counter = 0
-   let correctanser=false
- while (counter < 6 && correctanser ==false){
-    let foodqus = prompt('what is my faveroit food ')
+//    let counter = 0
+//    let correctanser=false
+//  while (counter < 6 && correctanser ==false){
+//     let foodqus = prompt('what is my faveroit food ')
 
 
-    for (let n = 0; n < typefood.length; n++) {
-        console.log('first loop ' ,n);
+//     for (let n = 0; n < typefood.length; n++) {
+//         console.log('first loop ' ,n);
 
-        if (foodqus === typefood[n]) {
+//         if (foodqus === typefood[n]) {
            
-            alert('wow great also ' + typefood)
-            correctanser = true
-            score++;
-            break;
+//             alert('wow great also ' + typefood)
+//             correctanser = true
+//             score++;
+//             break;
             
 
-        }
+//         }
 
-        // else {
-        //     foodqus = prompt('please try again ')
+//         // else {
+//         //     foodqus = prompt('please try again ')
 
-        // }
- }
+//         // }
+//  }
 
- counter++ 
+//  counter++ 
+
+// }
+
+let response='';
+let typefood = ['mansaf', 'borger', 'taco', 'kapsah'];
+
+for (let i=0;i<6;i++){
+ response=prompt('what is my faverote food ')
+
+ for (let j=0;j<typefood.length;j++)
+    if (response===typefood[j]){
+         alert('great you are correct ')
+         score++
+         i=10
+
+    }
+
+if (i===5){
+    alert ('sorry no more tries  '+typefood)
 
 }
+else if (i<6){
+    alert('wrong answer try again ')
+}
+
+
+
+}
+
+
+
+
 console.log(score);
 alert(`you have a score of ${score} /7`);
