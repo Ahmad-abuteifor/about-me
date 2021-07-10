@@ -28,7 +28,7 @@ else {
 question1 ()
 
 function question2(){
-let place = prompt('is garmany in jordan !?')
+let place = prompt('is germany in jordan !?')
 place=place.toLocaleLowerCase()
 
 if (place  ==='yes'|| place==='y'){
